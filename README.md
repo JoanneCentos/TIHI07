@@ -39,25 +39,32 @@ Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putt
 
 
 Lo primero que haremos será abrir  el software VirtualBox y seleccionaremos la opción "nuevo"
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_1.png">
 
 allí asignaremos un espacio de memoria RAM de 4096mb
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_2.png">
 
 A continuación crearemos un disco virtual (VDI Virtual Box Disk Image) de 15GB.
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_6.png">
 
 Una vez que finalice el proceso procederemos a iniciar e instalar CentOS-7
+
 En la siguiente ventana seleccionaremos el lenguaje en el cual iremos a trabajar, en este caso, English (United States) o Español (Latinoamerica) y presionaremos "Continuar"
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_10.png">
 
 Si todo va correctamente el programa nos pedirá que seleccionemos el destino de la instalación, el cual será nuestro disco de 15GB creado previamente y en la esquina superior izquierda presionaremos "Done"
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_12.png">
 
 Para finalizar en la esquina inferior derecha presionaremos "Begin Installation" para comenzar la instalación
 Teniendo en cuenta de que nadie más accederá a nuestra maquina crearemos una root password la cual para este caso será "root"
 Luego crearemos un usuario el cual tendrá como username "user" y contraseña "user" y para finalizar haremos click en "reboot"
 Una vez que termine de reiniciar accederemos con nuestro usuario y contraseña (user)
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_17.png">
 
 ## Acceso a la red
@@ -83,17 +90,22 @@ Después abriremos nuestro software Putty donde agregaremos la siguiente IP "127
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_23.png">
 
 Si todo ha ido bien nos debería abrir la siguiente ventana donde entraremos con nuestro usuario y contraseña "user"
+
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Putty.png">
 
+
 ## Habilitar SSH
-================
 
-Luego habilitaremos SSH a través de nuestra consola
+SSH (o Secure SHell) es el nombre de un protocolo y del programa que lo implementa cuya principal función es el acceso remoto a un servidor por medio de un canal seguro en el que toda la información está cifrada. Además de la conexión a otros dispositivos, SSH permite copiar datos de forma segura. El protocolo TCP asignado es el 22. [Mas información sobre SSH](https://www.ssh.com/ssh/)
 
-Para instalar el servidor y cliente OpenSSH escribiremos "yum -y install openssh-server openssh-clients" en la consola
-habilitar al comenzar "chkconfig sshd on"
 
-reiniciar SSHD "service sshd restart"
+Lo primero que haremos será habilitar SSH a través de nuestra consola. Para instalar el servidor y cliente OpenSSH escribiremos los siguientes comandos
+
+	"yum -y install openssh-server openssh-clients" en la consola
+	"chkconfig sshd on"
+	"service sshd restart"
+
+## Instalación Java 8 JDK
 
 Ahora pasaremos a instalar java 8 jdk
 
