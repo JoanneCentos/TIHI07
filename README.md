@@ -26,13 +26,13 @@ Table of contents
 ## Requisitos previos
 
 
-1.-: Descargar e instalar Oracle VM VirtualBox
+#### Descargar e instalar Oracle VM VirtualBox
 Lo primero que haremos será descargar el software de virtualización [Virtual Box (6.0.4)](https://www.virtualbox.org/wiki/Downloads)
 
-2.-: Descargar e instalar CentOS-7:
+#### Descargar e instalar CentOS-7
 Una vez que ya tenemos instalada Oracle VM VirtualBox descargaremos la versión mínima del sistema operativo [CentOS-7 versión mínima] (http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso)
 
-3.-: Descargar e instalar Putty
+#### Descargar e instalar Putty
 Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putty versión 0.71] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) e instalarlo respectivamente.
 
 
