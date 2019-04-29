@@ -72,7 +72,7 @@ Una vez que termine de reiniciar accederemos con nuestro usuario y contraseña (
 ## Acceso a la red
 
 
-En la consola escribiremos el comando "su -" y nuestra contraseña "root", seguido de el comando "ifup enp0s3" (Este comando deberá ser introducido cada vez que apaguemos o reiniciemos la maquina virtual de lo contrario no tendremos acceso a internet dentro de esta)
+	En la consola escribiremos el comando "su -" y nuestra contraseña "root", seguido de el comando "ifup enp0s3" (Este comando deberá ser introducido cada vez que apaguemos o reiniciemos la maquina virtual de lo contrario no tendremos acceso a internet dentro de esta)
 
 Luego escribiremos "ip a", comando con el cual podremos ver nuestra dirección IP
 
@@ -98,20 +98,23 @@ Si todo ha ido bien nos debería abrir la siguiente ventana donde entraremos con
 
 ## Habilitar SSH
 
-SSH (o Secure SHell) es el nombre de un protocolo y del programa que lo implementa cuya principal función es el acceso remoto a un servidor por medio de un canal seguro en el que toda la información está cifrada. Además de la conexión a otros dispositivos, SSH permite copiar datos de forma segura. El protocolo TCP asignado es el 22. [Mas información sobre SSH](https://www.ssh.com/ssh/)
+#### Sobre Secure Shell
+SSH (o Secure Shell) es el nombre de un protocolo y del programa que lo implementa cuya principal función es el acceso remoto a un servidor por medio de un canal seguro en el que toda la información está cifrada. Además de la conexión a otros dispositivos, SSH permite copiar datos de forma segura. El protocolo TCP asignado es el 22. [Mas información sobre SSH](https://www.ssh.com/ssh/)
 
 
 Lo primero que haremos será habilitar SSH a través de nuestra consola. Para instalar el servidor y cliente OpenSSH escribiremos los siguientes comandos.
 
-	"yum -y install openssh-server openssh-clients" en la consola
+	"yum -y install openssh-server openssh-clients"
 	"chkconfig sshd on"
 	"service sshd restart"
 
+
 ## Instalación Java 8 JDK
 
+#### Sobre Java Development Kit
 JDK (Java Development Kit) o Herramientas de desarrollo para Java es un software que provee herramientas de desarrollo para la creación de programas en Java. Aquí nos encontraremos con el compilador javac que es el encargado de convertir nuestro código fuente el cual posteriormente sera interpretado y ejecutado con la JVM (Java Virtual Machine) por sus siglas en ingles, que nuevamente al español es La Maquina Virtual de Java.
 
-Como primer paso será ir a nuestra consola como usuario root con el comando e ingresaremos nuestra contraseña
+Como primer paso iremos a nuestra consola como usuario root con el comando e ingresaremos nuestra contraseña
 
 	su -
 	
@@ -119,6 +122,37 @@ A continuación escribiremos el siguiente comando (Tenga en cuenta que la direcc
 
 	wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"
 
+
 ## Instalación ambiente de escritorio
 
+#### Sobre GNOME
+GNOME es un entorno de escritorio e infraestructura de desarrollo para sistemas operativos GNU/Linux y Unix compuesto enteramente de software libre.
+
+Para instalar el ambiente de escritorio GNOME escribiremos el siguiente comando
+
+	 yum -y groups install "GNOME Desktop" 
+
+Luego de que el proceso de instalación este terminado usaremos el siguiente comando para iniciarlo (Este comando lo tendremos que iniciar nuevamente cada vez que apaguemos o reiniciemos la maquina virtual)
+
+	startx
+	
+	
+## Instalación Netbeans 8.0.2
+
+Para instalar netbeans iremos con el navegador (Firefox por defecto) a la pagina de [netbeans](#https://netbeans.org/downloads/8.0.2)
+
+<img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Netbeans.png">
+
+Una vez descargado netbeans (Que por defecto se encontrará en la carpeta de descargas "Downloads") usaremos el siguiente comando con el que buscamos concederle los permisos para su instalación
+
+	chmod +x netbeans-8.0.2-linux.sh
+
+Luego de eso haremos el siguiente comando con el que abriremos el archivo en nuestra carpeta de descargas que nos abrirá el asistente de instalación
+
+	./netbeans-8.0.2-linux.sh
+	
+###### En caso de que hayamos descargado otra versión de netbeans o que el archivo de descarga tenga un numero diferente lo corroboraremos  viendo el nombre del archivo haciendo
+
+	cd Downloads
+	ls
 
