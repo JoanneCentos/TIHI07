@@ -157,8 +157,17 @@ Luego de eso haremos el siguiente comando con el que abriremos el archivo en nue
 	cd Downloads
 	ls
 
-## Instalacion postgreSQL
+## Instalación postgreSQL
 
 ####  Sobre postgreSQL
 
-es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto, publicado bajo la licencia PostgreSQL,  similar a la BSD o la MIT.
+PostgreSQL es un potente sistema de base de datos objeto-relacional de código abierto. Cuenta con más de 15 años de desarrollo activo y una arquitectura probada que se ha ganado una sólida reputación de fiabilidad e integridad de datos. Se ejecuta en los principales sistemas operativos que existen en la actualidad como Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64) y Windows
+
+Para instalar PostgreSQL nos dirijitemos a la pagina oficial de [PostgreSQL](#https://www.postgresql.org/download/linux/redhat/) en la cual seleccionaremos la versión que querramos instalar, en nuestro caso instalaremos PostgreSQL 11 así que copiaremos las siguientes lineas de código
+
+	yum install https://download.postgresql.org/pub/repos/yum/11/redhat/rhel-7-x86_64/pgdg-centos11-11-2.noarch.rpm
+	yum install postgresql11
+	yum install postgresql11-server
+	/usr/pgsql-11/bin/postgresql-11-setup initdb
+	systemctl enable postgresql-11
+	systemctl start postgresql-11
