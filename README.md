@@ -6,12 +6,12 @@ Cabe destacar que esta guía está siendo creada con fines didácticos realizado
 
 
 ## Sobre CentOS7
-=============
+
 CentOS 7 es un sistema operativo de código abierto, basado en la distribución Red Hat Enterprise Linux, operándose de manera similar, y cuyo objetivo es ofrecer al usuario un software de "clase empresarial" gratuito. Se define como robusto, estable y fácil de instalar y utilizar. Desde la versión 5, cada lanzamiento recibe soporte durante diez años, por lo que la actual versión 7 recibirá actualizaciones de seguridad hasta el 30 de junio de 2024. [Ver mas información sobre CentOS 7](https://www.centos.org/)
 
 
 Table of contents
-=================
+
 
 <!--ts-->
    * [Requisitos Previos](#Requisitos-previos)
@@ -22,21 +22,21 @@ Table of contents
 
 
 ## Requisitos previos
-=====================
+
 
 1.-: Descargar e instalar Oracle VM VirtualBox
 Lo primero que haremos será descargar el software de virtualización [Virtual Box (6.0.4)](https://www.virtualbox.org/wiki/Downloads)
 
 2.-: Descargar e instalar CentOS-7:
-Una vez que ya tenemos instalada Oracle VM VirtualBox descargaremos la versión mínima del sistema operativo [CentOS-7(versión mínima)] (http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso)
+Una vez que ya tenemos instalada Oracle VM VirtualBox descargaremos la versión mínima del sistema operativo [CentOS-7 versión mínima] (http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso)
 
 3.-: Descargar e instalar Putty
-Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putty (versión 0.71)] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) e instalarlo respectivamente.
+Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putty versión 0.71] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) e instalarlo respectivamente.
 
 
 
 ## Instalación
-==============
+
 
 Lo primero que haremos será abrir  el software VirtualBox y seleccionaremos la opción "nuevo", allí asignaremos un espacio de memoria RAM de 4096mb
 A continuación crearemos un disco virtual (VDI Virtual Box Disk Image) de 15GB.
@@ -52,7 +52,7 @@ Luego crearemos un usuario el cual tendrá como username "user" y contraseña "u
 Una vez que termine de reiniciar accederemos con nuestro usuario y contraseña (user)
 
 ## Acceso a la red
-==================
+
 
 En la consola escribiremos el comando "su -" y nuestra contraseña "root", seguido de el comando "ifup enp0s3" mostrándonos el siguiente mensaje
 
