@@ -5,16 +5,23 @@ Integrantes:  ✒️
 * Rene barria,
 * Ricardo gallardo,
 
-## Tabla de contenidos
-*[QueEs](#QueEs)
-*[Introducción](#Introducción)
- 
-<a name="QueEs"/>
-## ¿Que es CentOS-7?
+Table of contents
+=================
+
+<!--ts-->
+   * [Sobre Centos7](#Sobre-Centos7)
+   * [Instalación](#Instalacion)
+  
+<!--te-->
+
+Sobre Centos7
+============
 Centos 7 es un sistema operativo de código abierto, basado en la distribución Red Hat Enterprise Linux, operándose de manera similar, y cuyo objetivo es ofrecer al usuario un software de "clase empresarial" gratuito. Se define como robusto, estable y fácil de instalar y utilizar. Desde la versión 5, cada lanzamiento recibe soporte durante diez años, por lo que la actual versión 7 recibirá actualizaciones de seguridad hasta el 30 de junio de 2024.
 
-<a name="Introducción"/>
-## Introducción
+
+Instalación
+============
+
 
 La siguiente será una guía de instalación de la máquina virtual (virtual box) e instalación de sistema operativo (centos7), Nosotros usaremos la versión 6.0.4 disponible para Windows de 64-bits.
 
