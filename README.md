@@ -63,21 +63,27 @@ Una vez que termine de reiniciar accederemos con nuestro usuario y contraseña (
 ## Acceso a la red
 
 
-En la consola escribiremos el comando "su -" y nuestra contraseña "root", seguido de el comando "ifup enp0s3" mostrándonos el siguiente mensaje
+En la consola escribiremos el comando "su -" y nuestra contraseña "root", seguido de el comando "ifup enp0s3" (Este comando deberá ser introducido cada vez que apaguemos o reiniciemos la maquina virtual de lo contrario no tendremos acceso a internet dentro de esta)
 
-Luego escribiremos "ip a" lo cual nos mostrará esta IP
-Después iremos a nuestra ventana de virtual box y seleccionando OS iremos a configuración, iremos a la pestaña de red y haremos click en avanzadas y haremos click en "Reenvió de puertos"
+Luego escribiremos "ip a", comando con el cual podremos ver nuestra dirección IP
+
+Después iremos a nuestra ventana de virtual box y seleccionando nuestro sistema operativo iremos a configuración, iremos a la pestaña de red y haremos click en avanzadas y haremos click en "Reenvió de puertos"
+
+<img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_24.png">
 
 Allí agregaremos la siguiente regla de envíos:
 
 	IP anfitrion: 127.0.0.1 (Nuestra IP local)
 	Puerto anfitrion: 8001 (Puerto inutilizado)
-	IP invitado: 10.0.2.15 (IP en la consola CentOS-7)
+	IP invitado: 10.0.2.15 (IP en la consola CentOS-7 en nuestro caso)
 	Puerto invitado: 22 (Puerto estandar)
 
-Después abriremos putty donde agregaremos la siguiente IP "127.0.0.1" con puerto "8001"
+Después abriremos nuestro software Putty donde agregaremos la siguiente IP "127.0.0.1" con puerto "8001"
+
+<img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_23.png">
 
 Si todo ha ido bien nos debería abrir la siguiente ventana donde entraremos con nuestro usuario y contraseña "user"
+<img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Putty.png">
 
 ## Habilitar SSH
 ================
