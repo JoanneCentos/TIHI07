@@ -18,6 +18,7 @@ Table of contents
    * [Instalación](#Instalación)
    * [Acceso a la red](#Acceso-a-la-red)
    * [Habilitar SSH](#Habilitar-SSH)
+   * [Instalación Java 8 JDK](#Instalación-Java-8-JDK)
 <!--te-->
 
 
@@ -99,7 +100,7 @@ Si todo ha ido bien nos debería abrir la siguiente ventana donde entraremos con
 SSH (o Secure SHell) es el nombre de un protocolo y del programa que lo implementa cuya principal función es el acceso remoto a un servidor por medio de un canal seguro en el que toda la información está cifrada. Además de la conexión a otros dispositivos, SSH permite copiar datos de forma segura. El protocolo TCP asignado es el 22. [Mas información sobre SSH](https://www.ssh.com/ssh/)
 
 
-Lo primero que haremos será habilitar SSH a través de nuestra consola. Para instalar el servidor y cliente OpenSSH escribiremos los siguientes comandos
+Lo primero que haremos será habilitar SSH a través de nuestra consola. Para instalar el servidor y cliente OpenSSH escribiremos los siguientes comandos.
 
 	"yum -y install openssh-server openssh-clients" en la consola
 	"chkconfig sshd on"
@@ -107,9 +108,9 @@ Lo primero que haremos será habilitar SSH a través de nuestra consola. Para in
 
 ## Instalación Java 8 JDK
 
-Ahora pasaremos a instalar java 8 jdk
+JDK (Java Development Kit) o Herramientas de desarrollo para Java es un software que provee herramientas de desarrollo para la creación de programas en Java. Aquí nos encontraremos con el compilador javac que es el encargado de convertir nuestro código fuente el cual posteriormente sera interpretado y ejecutado con la JVM (Java Virtual Machine) por sus siglas en ingles, que nuevamente al español es La Maquina Virtual de Java.
 
-En la consola escribiremos el comando cd ~
-
-Luego escribiremos lo siguiente:
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"
+Como primer paso será ir a nuestra consola como usuario root con el comando e ingresaremos nuestra contraseña:
+	"su -"
+A continuación escribiremos el siguiente comando
+	wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"
