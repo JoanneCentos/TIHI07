@@ -113,11 +113,11 @@ JDK (Java Development Kit) o Herramientas de desarrollo para Java es un software
 
 Como primer paso será ir a nuestra consola como usuario root con el comando e ingresaremos nuestra contraseña
 
-	``su -``
+	su -
 	
 A continuación escribiremos el siguiente comando (Tenga en cuenta que la direccion de enlace pasará a variar dependiendo de la dirección de enlace que esté instalando, para esto copie la direccion de enlace del archivo .rpm en la pagina de [oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
 
-	``wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"``
+	wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"
 
 ## Instalación ambiente de escritorio
 
