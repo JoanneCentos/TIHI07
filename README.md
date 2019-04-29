@@ -19,6 +19,7 @@ Table of contents
    * [Acceso a la red](#Acceso-a-la-red)
    * [Habilitar SSH](#Habilitar-SSH)
    * [Instalación Java 8 JDK](#Instalación-Java-8-JDK)
+   * [Instalación ambiente de escritorio](#Instalacion-ambiente-de-escritorio)
 <!--te-->
 
 
@@ -111,6 +112,10 @@ Lo primero que haremos será habilitar SSH a través de nuestra consola. Para in
 JDK (Java Development Kit) o Herramientas de desarrollo para Java es un software que provee herramientas de desarrollo para la creación de programas en Java. Aquí nos encontraremos con el compilador javac que es el encargado de convertir nuestro código fuente el cual posteriormente sera interpretado y ejecutado con la JVM (Java Virtual Machine) por sus siglas en ingles, que nuevamente al español es La Maquina Virtual de Java.
 
 Como primer paso será ir a nuestra consola como usuario root con el comando e ingresaremos nuestra contraseña:
-	``**su -**
-A continuación escribiremos el siguiente comando
-	wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"``
+	``su -``
+A continuación escribiremos el siguiente comando (Tenga en cuenta que la direccion de enlace pasará a variar dependiendo de la dirección de enlace que esté instalando, para esto copie la direccion de enlace del archivo .rpm en la pagina de [oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html))
+	``wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.rpm"``
+
+##Instalación ambiente de escritorio
+
+
