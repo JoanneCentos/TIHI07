@@ -39,6 +39,7 @@ Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putt
 
 
 Lo primero que haremos será abrir  el software VirtualBox y seleccionaremos la opción "nuevo", allí asignaremos un espacio de memoria RAM de 4096mb
+https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_1.png
 A continuación crearemos un disco virtual (VDI Virtual Box Disk Image) de 15GB.
 
 Una vez que finalice el proceso procederemos a iniciar e instalar CentOS-7
