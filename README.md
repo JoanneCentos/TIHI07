@@ -174,3 +174,15 @@ Para instalar PostgreSQL nos dirijitemos a la pagina oficial de PostgreSQL (http
 	systemctl start postgresql-11
 	
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Postgres.png">
+
+
+#### Conectar PostgreSQL y Netbeans
+
+Para conectar un cliente remoto a PostgreSQL vamos a utilizar el siguiente comando con el cual buscamos abrir mediante el editor de texto "VI" para asi modificar el archivo "pg_hba.conf"
+
+	# vi  /var/lib/pgsql/data/pg_hba.conf
+	
+En este archivo de texto buscaremos la IPV4 de nuestro cliente y editaremos la parte donde dice "Ident" con "md5", con esto, ya no deberiamos tener error al tratar de acceder a nuestra base de datos mediante un cliente ajeno a PostgreSQL
+
+	"Ident" ----> "md5"
+	
