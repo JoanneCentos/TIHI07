@@ -20,7 +20,7 @@ Table of contents
    * [Habilitar SSH](#Habilitar-SSH)
    * [Instalación Java 8 JDK](#Instalación-Java-8-JDK)
    * [Instalación ambiente de escritorio](#Instalación-ambiente-de-escritorio)
-   * [Instalación Netbeans 8.0.2](#Instalación-Netbeans-8.0.2)
+   * [Instalación Netbeans](#Instalación-Netbeans)
 <!--te-->
 
 
@@ -138,7 +138,7 @@ Luego de que el proceso de instalación este terminado usaremos el siguiente com
 	startx
 	
 	
-## Instalación Netbeans 8.0.2
+## Instalación Netbeans
 
 Para instalar netbeans iremos con el navegador (Firefox por defecto) a la pagina de [netbeans](#https://netbeans.org/downloads/8.0.2)
 
