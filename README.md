@@ -156,3 +156,6 @@ Luego de eso haremos el siguiente comando con el que abriremos el archivo en nue
 	cd Downloads
 	ls
 
+## Instalacion postgreSQL
+
+####  es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto, publicado bajo la licencia PostgreSQL,  similar a la BSD o la MIT.
