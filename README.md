@@ -2,56 +2,43 @@
 
 La siguiente será una guía de instalación de la máquina virtual (virtual box) e instalación de sistema operativo (centos7), Nosotros usaremos la versión 6.0.4 disponible para Windows de 64-bits.
 
-Cabe destacar que esta guía está siendo creada con fines didácticos realizados en nuestra maquina personal. Estos serán los programas necesarios:
+Cabe destacar que esta guía está siendo creada con fines didácticos realizados en nuestra maquina personal.
 
 
-Sobre CentOS7
+## Sobre CentOS7
 =============
 CentOS 7 es un sistema operativo de código abierto, basado en la distribución Red Hat Enterprise Linux, operándose de manera similar, y cuyo objetivo es ofrecer al usuario un software de "clase empresarial" gratuito. Se define como robusto, estable y fácil de instalar y utilizar. Desde la versión 5, cada lanzamiento recibe soporte durante diez años, por lo que la actual versión 7 recibirá actualizaciones de seguridad hasta el 30 de junio de 2024. [Ver mas información sobre CentOS 7](https://www.centos.org/)
 
-
-Integrantes:
-* Felipe rodriguez,
-* Rene barria,
-* Ricardo gallardo,
 
 Table of contents
 =================
 
 <!--ts-->
-   1.- [Instalación](#Instalación)
-   	1.1.- [Instalación](#Instalación)
+   * [Requisitos Previos](#Requisitos-previos)
+   * [Instalación](#Instalación)
+   * [Acceso a la red](#Acceso-a-la-red)
+   * [Habilitar SSH](#Habilitar-SSH)
 <!--te-->
 
 
-Instalación
-===========
+## Requisitos previos
+=====================
+
+1.-: Descargar e instalar Oracle VM VirtualBox
+Lo primero que haremos será descargar el software de virtualización [Virtual Box (6.0.4)](https://www.virtualbox.org/wiki/Downloads)
+
+2.-: Descargar e instalar CentOS-7:
+Una vez que ya tenemos instalada Oracle VM VirtualBox descargaremos la versión mínima del sistema operativo [CentOS-7(versión mínima)] (http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso)
+
+3.-: Descargar e instalar Putty
+Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putty (versión 0.71)] (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) e instalarlo respectivamente.
 
 
-La siguiente será una guía de instalación de la máquina virtual (virtual box) e instalación de sistema operativo (centos7), Nosotros usaremos la versión 6.0.4 disponible para Windows de 64-bits.
 
-Cabe destacar que esta guía está siendo creada con fines didácticos realizados en nuestra maquina personal. Estos serán los programas necesarios:
+## Instalación
+==============
 
-### 1.-: descargar e instalar virtual box:
-
-Para descargarlo le dejamos el link la página oficial:
-Virtual Box (6.0.4): https://www.virtualbox.org/wiki/Downloads
-
-2.-: descargar e instalar CentOS-7:
-
-Una vez que ya tenemos instalada virtual box descargaremos la versión mínima de CentOS-7.
-
-CentOS-7(versión mínima): http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso
-
-1.-: descargar e instalar Putty:}
-
-Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software putty e instalarlo respectivamente.
-
-Putty (versión 0.71): https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-
- Instalación máquina.
- 
-Luego abriremos el software de virtual box y seleccionaremos la opción "nuevo", allí asignaremos un espacio de memoria RAM de 4096mb
+Lo primero que haremos será abrir  el software VirtualBox y seleccionaremos la opción "nuevo", allí asignaremos un espacio de memoria RAM de 4096mb
 A continuación crearemos un disco virtual (VDI Virtual Box Disk Image) de 15GB.
 
 Una vez que finalice el proceso procederemos a iniciar e instalar CentOS-7
@@ -63,6 +50,9 @@ Para finalizar en la esquina inferior derecha presionaremos "Begin Installation"
 Teniendo en cuenta de que nadie más accederá a nuestra maquina crearemos una root password la cual para este caso será "root"
 Luego crearemos un usuario el cual tendrá como username "user" y contraseña "user" y para finalizar haremos click en "reboot"
 Una vez que termine de reiniciar accederemos con nuestro usuario y contraseña (user)
+
+## Acceso a la red
+==================
 
 En la consola escribiremos el comando "su -" y nuestra contraseña "root", seguido de el comando "ifup enp0s3" mostrándonos el siguiente mensaje
 
@@ -79,6 +69,10 @@ Allí agregaremos la siguiente regla de envíos:
 Después abriremos putty donde agregaremos la siguiente IP "127.0.0.1" con puerto "8001"
 
 Si todo ha ido bien nos debería abrir la siguiente ventana donde entraremos con nuestro usuario y contraseña "user"
+
+## Habilitar SSH
+================
+
 Luego habilitaremos SSH a través de nuestra consola
 
 Para instalar el servidor y cliente OpenSSH escribiremos "yum -y install openssh-server openssh-clients" en la consola
