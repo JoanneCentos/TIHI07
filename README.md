@@ -172,3 +172,5 @@ Para instalar PostgreSQL nos dirijitemos a la pagina oficial de PostgreSQL (http
 	/usr/pgsql-11/bin/postgresql-11-setup initdb
 	systemctl enable postgresql-11
 	systemctl start postgresql-11
+	
+<img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Postgres.png">
