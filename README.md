@@ -21,6 +21,7 @@ Table of contents
    * [Instalación Java 8 JDK](#Instalación-Java-8-JDK)
    * [Instalación ambiente de escritorio](#Instalación-ambiente-de-escritorio)
    * [Instalación Netbeans](#Instalación-Netbeans)
+   * [Instalación PostgreSQL](#Instalación-PostgreSQL)
 <!--te-->
 
 
@@ -157,7 +158,7 @@ Luego de eso haremos el siguiente comando con el que abriremos el archivo en nue
 	cd Downloads
 	ls
 
-## Instalación postgreSQL
+## Instalación PostgreSQL
 
 ####  Sobre postgreSQL
 
