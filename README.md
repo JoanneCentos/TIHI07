@@ -19,7 +19,8 @@ Table of contents
    * [Acceso a la red](#Acceso-a-la-red)
    * [Habilitar SSH](#Habilitar-SSH)
    * [Instalación Java 8 JDK](#Instalación-Java-8-JDK)
-   * [Instalación ambiente de escritorio](#Instalacion-ambiente-de-escritorio)
+   * [Instalación ambiente de escritorio](#Instalación-ambiente-de-escritorio)
+   * [Instalación Netbeans 8.0.2](#Instalación-Netbeans-8.0.2)
 <!--te-->
 
 
