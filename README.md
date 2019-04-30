@@ -4,7 +4,6 @@ La siguiente será una guía de instalación de la máquina virtual (virtual box
 
 Cabe destacar que esta guía está siendo creada con fines didácticos realizados en nuestra maquina personal.
 
-
 ## Sobre CentOS7
 
 CentOS 7 es un sistema operativo de código abierto, basado en la distribución Red Hat Enterprise Linux, operándose de manera similar, y cuyo objetivo es ofrecer al usuario un software de "clase empresarial" gratuito. Se define como robusto, estable y fácil de instalar y utilizar. Desde la versión 5, cada lanzamiento recibe soporte durante diez años, por lo que la actual versión 7 recibirá actualizaciones de seguridad hasta el 30 de junio de 2024. [Ver mas información sobre CentOS 7](https://www.centos.org/)
@@ -43,6 +42,7 @@ Cuando ya hayamos descargado CentOS-7 procederemos a descargar el software [Putt
 
 
 Lo primero que haremos será abrir  el software VirtualBox y seleccionaremos la opción "nuevo"
+(Hay que tener en cuenta que vamos a usar la versión de 64 bits, por lo que hay que tener la virtualización activada en la bios)
 
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/Screenshot/Screenshot_1.png">
 
