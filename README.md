@@ -178,7 +178,7 @@ Para instalar PostgreSQL nos dirijitemos a la pagina oficial de PostgreSQL (http
 
 #### Conectar PostgreSQL y Netbeans
 
-Para conectar un cliente remoto a PostgreSQL vamos a utilizar el siguiente comando con el cual buscamos abrir mediante el editor de texto "VI" para asi modificar el archivo "pg_hba.conf"
+Para conectar un cliente remoto a PostgreSQL vamos a utilizar el siguiente comando con el cual buscamos abrir mediante el editor de texto "VI" para asi modificar el archivo "pg_hba.conf" (En caso de que no podamos acceder al archivo, podemos llegar a el por medio de los comandos "ls" y "cd")
 
 	# vi  /var/lib/pgsql/data/pg_hba.conf
 	
