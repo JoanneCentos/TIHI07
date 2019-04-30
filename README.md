@@ -28,7 +28,7 @@ CentOS 7 es un sistema operativo de código abierto, basado en la distribución 
 
 
 #### Descargar e instalar Oracle VM VirtualBox
-Lo primero que haremos será descargar el software de virtualización [Virtual Box (6.0.4)](https://www.virtualbox.org/wiki/Downloads)
+Lo primero que haremos será descargar el software de virtualización [Virtual Box (6.0.6)](https://www.virtualbox.org/wiki/Downloads)
 
 #### Descargar e instalar CentOS-7
 Una vez que ya tenemos instalada Oracle VM VirtualBox descargaremos la versión mínima del sistema operativo [CentOS-7 versión mínima] (http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso)
