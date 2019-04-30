@@ -195,13 +195,13 @@ Ya que estamos usando una versión de netbeans superior a la 8, descargamos el s
 <img src="https://raw.githubusercontent.com/JoanneCentos/TIHI07/master/JDBC.png">
 
 
-<!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.8.1</version>
-    <scope>test</scope>
-</dependency>
+	<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+    	<groupId>junit</groupId>
+    	<artifactId>junit</artifactId>
+    	<version>4.8.1</version>
+    	<scope>test</scope>
+	</dependency>
 
 
 
